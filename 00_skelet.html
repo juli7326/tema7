@@ -5,15 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <style>
+        article {
+            width: 50vw;
+            font-family: sans-serif
+        }
+    </style>
     <link rel="stylesheet" href="">
 </head>
 
 <body>
+    <main>
+        <article>
+            <h2>Hej med dig du</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vel, facilis neque qui explicabo nulla vitae nisi. Maiores, adipisci. Aut nostrum cupiditate dolorum aliquid animi corporis, officiis explicabo ducimus autem!</p>
+        </article>
+    </main>
     <script>
+        document.querySelector("article").addEventListener("click", doSomeThing);
 
-
-
+        function doSomeThing() {
+            this.style.background = "red";
+        }
     </script>
-</body>
-
-</html>
+</body></html>
