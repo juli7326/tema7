@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p>Hvad er din alder?</p>
+
+    <input type="text" id="din">
+    <p>Hvad er din dates alder?</p>
+    <input type="text" id="date">
+    <button>Klik og beregn alder, kig i consolen</button>
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked)
+
+        function buttonClicked() {
+
+            let din = document.querySelector("#din").value;
+            let date = document.querySelector("#date").value;
+            let pasning = din / 2 + 7;
+            let pasning_1 = date / 2 + 7;
+            let resultat = `Din alder er ${din} og din dates alder er ${date}. Derfor må din date mindst være være ${pasning} år. Du må mindst være ${pasning_1} `;
+            console.log(resultat);
+
+        }
+    </script>
+</body></html>
